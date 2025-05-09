@@ -31,9 +31,9 @@ const yoklama = (teacher: string, ...students: string[]) => {
  * hesapla(2,3,4,5,6) =====> {carpim:6,toplam:15} 
 */
 
-const ornek=(sayı1:number,sayı2:number, ...sayılar:number[])=>{
+const ornek=(sayi1: number, sayi2: number, ...sayilar: number[])=>{
     const carpim = sayi1 * sayi2;
-  const toplam = sayılar.reduce((acc, sayi) => acc + sayi, 0);
-  return { carpim, toplam };
+    const toplam = sayilar.reduce((acc, sayi) => acc + sayi, 0);
+    return { carpim, toplam };
 }
 console.log(ornek(1, 2, 3, 4));
